@@ -22,7 +22,7 @@ class tool {
         }
         return false;
     }
-    // 判断变量是否为字符串
+    // 判断变量是否为数组或者对象
     isArra( data ) {
         if ( data === '' || data === null ) { return false; }
         if ( Array.isArray( data ) || typeof data === 'object' ) {
@@ -30,7 +30,7 @@ class tool {
         }
         return false;
     }
-    // 判断变量是否为字符串
+    // 判断变量是否为 Json
     isJson( data ) {
         if ( data === '' || data === null ) { return false; }
         try {
