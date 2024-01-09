@@ -19,7 +19,7 @@ import func from 'befunc';
   - func.empty( v )
   - v 变量
 - 判断是否数组或者对象
-  - func.isArra( v )
+  - func.isArray( v )
   - v 变量
 - 判断是否为 JSON 字符串
   - func.isJson( v )
