@@ -1,5 +1,19 @@
 ### 常用函数封装
 
+#### 安装
+
+```
+npm install befunc
+# 或
+yarn add befunc
+```
+
+#### 使用
+
+```
+import func from 'befunc';
+```
+
 ##### 参数检查
 - 判断是否为空（ 如 PHP 中的 empty 函数 ）
   - func.empty( v )
