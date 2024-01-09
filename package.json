@@ -1,6 +1,6 @@
 {
   "name": "befunc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Quick javascript functions",
   "main": "app.js",
   "type": "module",
@@ -16,11 +16,11 @@
   "bugs": {
     "url": "https://github.com/LinnBenson/BeFunc/issues"
   },
-  "homepage": "https://github.com/LinnBenso",
+  "homepage": "https://github.com/LinnBenson",
   "scripts": {
     "test": "node test.js"
   },
   "dependencies": {
-    "befunc": "^1.0.0"
+    "axios": "^1.6.5"
   }
 }

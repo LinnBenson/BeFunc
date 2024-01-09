@@ -1,5 +1,10 @@
 // 导入依赖
-import func from './lib/tool.class.js'
+import ToolClass from './lib/Tool.class.js';
+import ApiProessClass from './lib/ApiProcess.class.js';
+import ServerProessClass from './lib/ServerProess.class.js';
 
-// 导出 Func 实例
-export default func;
+const Tool = new ToolClass;
+// 导出实例
+export const ApiProess = ApiProessClass;
+export const ServerProess = ServerProessClass;
+export default Tool;
