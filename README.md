@@ -1,18 +1,18 @@
-### 常用函数封装
+# 常用函数封装
 
-#### 安装
-
+## 安装
 ```
 npm install befunc
 # 或
 yarn add befunc
 ```
 
-#### 使用
-
+## 使用
 ```
 import func from 'befunc';
 ```
+
+### Func 方法
 
 ##### 参数检查
 - 判断是否为空（ 如 PHP 中的 empty 函数 ）
@@ -27,16 +27,13 @@ import func from 'befunc';
 - 判断是否为函数
   - func.isFunction( v )
   - v 变量
-
-
-#### 参数处理
+##### 参数处理
 - 将时间输出为指定格式
   - func.time( time, format = 'Y-M-D h:m:s', timezone = 0 )
   - time 格式化的时间或者时间戳
   - format 输出格式
   - timezone 结果时间加上指定小时
-
-#### 参数生成
+##### 参数生成
 - 生成当前时间
   - getTime( format = 'Y-M-D h:m:s' )
   - format 可指定输出格式，为 false 则输出 10 位时间戳
