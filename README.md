@@ -96,7 +96,7 @@ data:
 - options 请求可选配置
 ##### 检查请求结果
 ```
-examine( result, data )
+examine( data, result )
 
 data:
     {
@@ -104,8 +104,8 @@ data:
         error: [ function ] 请求出错执行函数
     }
 ```
-- result 请求到的结果
 - data 处理函数
+- result 请求到的结果
 
 ### ServerProess.class.js 方法
 
