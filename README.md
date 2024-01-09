@@ -17,19 +17,29 @@ import func from 'befunc';
 ##### 参数检查
 - 判断是否为空（ 如 PHP 中的 empty 函数 ）
   - func.empty( v )
+  - v 变量
 - 判断是否数组或者对象
   - func.isArra( v )
+  - v 变量
 - 判断是否为 JSON 字符串
   - func.isJson( v )
+  - v 变量
 - 判断是否为函数
   - func.isFunction( v )
+  - v 变量
 
 
 #### 参数处理
 - 将时间输出为指定格式
-  - func.time( time, format = 'Y-M-D h:m:s' )
+  - func.time( time, format = 'Y-M-D h:m:s', timezone = 0 )
   - time 格式化的时间或者时间戳
   - format 输出格式
+  - timezone 结果时间加上指定小时
+
+#### 参数生成
+- 生成当前时间
+  - getTime( format = 'Y-M-D h:m:s' )
+  - format 可指定输出格式，为 false 则输出 10 位时间戳
 - 生成随机字符串
   - func.rand( length, type = 'all' )
   - length 输出字符长度

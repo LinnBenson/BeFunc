@@ -1,5 +1,6 @@
 // 创建实例
 class tool {
+    // 判断变量是否为空
     empty( v ) {
         switch( typeof v ) {
             case 'undefined':
@@ -21,6 +22,7 @@ class tool {
         }
         return false;
     }
+    // 判断变量是否为字符串
     isArra( data ) {
         if ( data === '' || data === null ) { return false; }
         if ( Array.isArray( data ) || typeof data === 'object' ) {
@@ -28,6 +30,7 @@ class tool {
         }
         return false;
     }
+    // 判断变量是否为字符串
     isJson( data ) {
         if ( data === '' || data === null ) { return false; }
         try {
@@ -41,13 +44,17 @@ class tool {
             return false;
         }
     }
+    // 判断变量是否为函数
     isFunction( variable ) {
+        if ( variable === '' || variable === null ) { return false; }
         return typeof variable === 'function' ? true : false;
     }
-    time( time, format = 'Y-M-D h:m:s' ) {
+    // 时间格式转换
+    time( time, format = 'Y-M-D h:m:s', timezone = 0 ) {
         if ( !( time instanceof Date ) ) {
             time = isNaN( time ) ? new Date( time ) : new Date( time * 1000 );
         }
+        time.setHours( time.getHours() + 0 );
         const padZero = ( value ) => {
             return value < 10 ? '0' + value : value;
         };
@@ -64,6 +71,27 @@ class tool {
         }
         return format;
     }
+    // 获取当前时间
+    getTime( format = 'Y-M-D h:m:s' ) {
+        const time = new Date();
+        if ( format === false ) { return Math.floor( time.getTime() / 1000 ); }
+        const padZero = ( value ) => {
+            return value < 10 ? '0' + value : value;
+        };
+        const date = {
+            'Y': time.getFullYear(),
+            'M': padZero( time.getMonth() + 1 ),
+            'D': padZero( time.getDate() ),
+            'h': padZero( time.getHours() ),
+            'm': padZero( time.getMinutes() ),
+            's': padZero( time.getSeconds() )
+        };
+        for ( let key in date ) {
+            format = format.replace( key, date[key] );
+        }
+        return format;
+    }
+    // 生成随机字符串
     rand( length, type = 'all' ) {
         let data;
         switch ( type ) {
