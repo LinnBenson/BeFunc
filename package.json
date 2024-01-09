@@ -1,0 +1,21 @@
+{
+    "name": "befunc",
+    "version": "1.0.0",
+    "description": "Quick javascript functions",
+    "main": "app.js",
+    "keywords": [
+        "functions"
+    ],
+    "author": "Linn Benson",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LinnBenson/BeFunc.git"
+    },
+    "bugs": {
+        "url": "https://github.com/LinnBenson/BeFunc/issues"
+    },
+    "homepage": "https://github.com/LinnBenso",
+    "dependencies": {},
+    "devDependencies": {}
+}
