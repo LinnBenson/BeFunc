@@ -43,6 +43,10 @@ import func from 'befunc';
   - `func.rand( length, type = 'all' )`
   - length 输出字符长度
   - type 输出字符类型 （ all: 大小写字母+数字、num: 数字、letter: 大小写字母 ）
+- 复制对象
+  - `copy( data, num = 1 )`
+  - data 源对象
+  - 复制数量
 
 ### ApiProcess.class.js 方法
 
