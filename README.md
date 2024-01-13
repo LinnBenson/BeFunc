@@ -46,7 +46,7 @@ import func from 'befunc';
 - 复制对象
   - `copy( data, num = 1 )`
   - data 源对象
-  - 复制数量
+  - 复制数量（ 可填入数组，如 [ 2, 5 ] 意为随机返回 2-5 个对象 ）
 
 ### ApiProcess.class.js 方法
 
