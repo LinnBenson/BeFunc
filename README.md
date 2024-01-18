@@ -58,7 +58,7 @@ import func from 'befunc';
 import { ApiProess } from 'befunc';
 
 // 实例化类
-const Api = ApiProess( toast, load );
+const Api = ApiProess( { logout: function, toast: function, load: function, error: function } );
 // 发起网络请求示例
 Api.send({
     link: 'http://example.com',
@@ -77,8 +77,9 @@ Api.send({
 
 ##### 构造对象
 ```
-constructor( toast = false, load = false, error = 'Network response was not ok' )
+constructor( { logout: function, toast: function, load: function, error: function } )
 ```
+- logout 注销触发函数
 - toast Toast 通知触发函数
 - load 加载触发函数
 - error 网络错误提示内容
@@ -121,7 +122,7 @@ data:
 import { ServerProess } from 'befunc';
 
 // 实例化类
-const server = ServerProess( 'ws://example.com', toast );
+const server = ServerProess( { link: string, toast: function } );
 // 属性说明
 this.server // 当前连接实例
 this.state // 当前连接状态
@@ -132,7 +133,7 @@ this.functions // 回调方法
 
 ##### 构造对象
 ```
-constructor( link, toast = false, heartbeatTime = 15000 )
+constructor( { link: string, toast: function, heartbeatTime: number } )
 ```
 - link Websocket 连接地址
 - toast Toast 通知触发函数（ 为 false 时实例将不会自动连接 ）
