@@ -8,7 +8,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=react&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="MIT" />
+        <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=javascript&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="MIT" />
     </a>
     <a href="https://www.npmjs.com/package/befunc">
         <img src="https://img.shields.io/npm/v/befunc?style=for-the-badge&logo=npm&logoColor=%23F3F3F3&label=NPM&labelColor=%23434343&color=%231f883d" alt="NPM" />
