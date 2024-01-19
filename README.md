@@ -4,6 +4,9 @@
     </a>
 </h1>
 <p align="center">
+    <strong>常用函数方式，更方便的使用网络请求和函数工具</strong>
+</p>
+<p align="center">
     <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="BeFunc is released under the MIT license." />
     </a>
@@ -58,7 +61,7 @@ import Tool, { ApiProess, ServerProess } from 'befunc';
 - 复制对象
   - `copy( data, num = 1 )`
   - data 源对象
-  - 复制数量（ 可填入数组，如 [ 2, 5 ] 意为随机返回 2-5 个对象 ）
+  - num 复制数量（ 可填入数组，如 [ 2, 5 ] 意为随机返回 2-5 个对象 ）
 
 ### ApiProcess.class.js 方法
 
