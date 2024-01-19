@@ -8,10 +8,13 @@
 </p>
 <p align="center">
     <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="BeFunc is released under the MIT license." />
+        <img src="https://img.shields.io/github/license/linnbenson/befunc?style=for-the-badge&logo=github" alt="BeFunc is released under the MIT license." />
     </a>
     <a href="https://www.npmjs.com/package/befunc">
-        <img src="https://img.shields.io/npm/v/befunc?color=brightgreen&label=npm%20package" alt="Current npm package version." />
+        <img src="https://img.shields.io/npm/v/befunc?style=for-the-badge&label=npm%20package&logo=npm" alt="Current npm package version." />
+    </a>
+    <a href="https://bemiun.com">
+        <img src="https://img.shields.io/website?url=https%3A%2F%2Fbemiun.com&up_message=BEMIUN&style=for-the-badge" alt="Website." />
     </a>
 </p>
 
