@@ -1,6 +1,6 @@
 {
   "name": "befunc",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Quick javascript functions",
   "main": "app.js",
   "type": "module",

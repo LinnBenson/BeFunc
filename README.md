@@ -1,4 +1,16 @@
-# 常用函数封装
+<h1 align="center">
+    <a href="https://github.com/LinnBenson/BeFunc">
+        BeFunc
+    </a>
+</h1>
+<p align="center">
+    <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="BeFunc is released under the MIT license." />
+    </a>
+    <a href="https://www.npmjs.com/package/befunc">
+        <img src="https://img.shields.io/npm/v/befunc?color=brightgreen&label=npm%20package" alt="Current npm package version." />
+    </a>
+</p>
 
 ## 安装
 ```
@@ -13,7 +25,7 @@ yarn add befunc
 
 #### 使用
 ```
-import func from 'befunc';
+import Tool, { ApiProess, ServerProess } from 'befunc';
 ```
 
 ##### 参数检查
@@ -58,20 +70,25 @@ import func from 'befunc';
 import { ApiProess } from 'befunc';
 
 // 实例化类
-const Api = ApiProess( { logout: function, toast: function, load: function, error: function } );
+const Api = ApiProess({
+    logout: function, // 可选，网络请求为 403 时将执行此函数
+    toast: function, // 可选，Toast 通知函数
+    load: function, // 可选，加载函数
+    error: function // 可选，网络请求错误执行函数
+});
 // 发起网络请求示例
 Api.send({
     link: 'http://example.com',
-    post: { id: 1 },
-    check: true,
-    error: function( e ) {
+    post: { id: 1 }, // 可选，如果没有此参数请求方法则为 GET
+    check: true, // 可选，如果没此此参数则此函数将直接传回请求到的数据
+    error: function( e ) { // 可选，请求出错时将调用此函数
         console.log( e );
     },
-    run: function( e ) {
+    run: function( e ) { // 可选，请求成功时将调用此函数
         console.log( e );
     }
-}, true, {
-    timeout: 15000
+}, true, { // 可选，为 true 时将调用起加载函数
+    timeout: 15000 // 可选，默认为 15000ms
 });
 ```
 
@@ -122,7 +139,10 @@ data:
 import { ServerProess } from 'befunc';
 
 // 实例化类
-const server = ServerProess( { link: string, toast: function } );
+const server = ServerProess({
+    link: string, // 必须，Websocket 连接地址
+    toast: function // 可选，Toast 通知函数
+});
 // 属性说明
 this.server // 当前连接实例
 this.state // 当前连接状态
