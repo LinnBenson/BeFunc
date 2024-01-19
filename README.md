@@ -4,7 +4,9 @@
     </a>
 </h1>
 <p align="center">
-    <strong>常用函数方式，更方便的使用网络请求和函数工具</strong>
+    <strong>函数封装</strong>
+    <br />
+    更方便的使用网络请求和函数工具
 </p>
 <p align="center">
     <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
