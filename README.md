@@ -32,7 +32,7 @@ yarn add befunc
 
 ## 使用
 ```
-import Tool, { ApiProess, ServerProess } from 'befunc';
+import Tool, { ApiProess, ServerProess } from 'befunc'
 ```
 
 ## 主要文件
