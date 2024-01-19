@@ -10,16 +10,16 @@
 </p>
 <p align="center">
     <a href="https://github.com/LinnBenson/BeFunc/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=javascript&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="MIT" />
+        <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=javascript&logoColor=%23F3F3F3&labelColor=%231f2328&color=%231f883d" alt="MIT" />
     </a>
     <a href="https://www.npmjs.com/package/befunc">
-        <img src="https://img.shields.io/npm/v/befunc?style=for-the-badge&logo=npm&logoColor=%23F3F3F3&label=NPM&labelColor=%23434343&color=%231f883d" alt="NPM" />
+        <img src="https://img.shields.io/npm/v/befunc?style=for-the-badge&logo=npm&logoColor=%23F3F3F3&label=NPM&labelColor=%231f2328&color=%231f883d" alt="NPM" />
     </a>
     <a href="https://bemiun.com">
-        <img src="https://img.shields.io/badge/SITE-BEMIUN-blue?style=for-the-badge&logo=coursera&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="Website" />
+        <img src="https://img.shields.io/badge/SITE-BEMIUN-blue?style=for-the-badge&logo=coursera&logoColor=%23F3F3F3&labelColor=%231f2328&color=%231f883d" alt="Website" />
     </a>
     <a href="https://t.me/Beichuan">
-        <img src="https://img.shields.io/badge/TG-beichuan-blue?style=for-the-badge&logo=telegram&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="Telegram" />
+        <img src="https://img.shields.io/badge/TG-beichuan-blue?style=for-the-badge&logo=telegram&logoColor=%23F3F3F3&labelColor=%231f2328&color=%231f883d" alt="Telegram" />
     </a>
 </p>
 
