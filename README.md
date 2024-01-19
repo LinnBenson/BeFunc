@@ -14,7 +14,7 @@
         <img src="https://img.shields.io/npm/v/befunc?style=for-the-badge&logo=npm&logoColor=%23F3F3F3&label=NPM&labelColor=%23434343&color=%231f883d" alt="NPM" />
     </a>
     <a href="https://bemiun.com">
-        <img src="https://img.shields.io/badge/SITE-BEMIUN-blue?style=for-the-badge&logo=ipfs&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="Website" />
+        <img src="https://img.shields.io/badge/SITE-BEMIUN-blue?style=for-the-badge&logo=webpage&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="Website" />
     </a>
     <a href="https://t.me/Beichuan">
         <img src="https://img.shields.io/badge/TG-beichuan-blue?style=for-the-badge&logo=telegram&logoColor=%23F3F3F3&labelColor=%23434343&color=%231f883d" alt="Telegram" />
