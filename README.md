@@ -38,9 +38,9 @@ import Tool, { ApiProess, ServerProess } from 'befunc'
 ## 主要文件
 - /lib/Tool.class.js
   - 主要封装了一些常用的函数工具
-- ApiProcess.class.js
+- /lib/ApiProcess.class.js
   - 对 axios 的二次封装，以简化其使用
-- ServerProess.class.js
+- /lib/ServerProess.class.js
   - 创建 Websocket 实例，对消息进行处理
 
 ## 函数工具方法说明
@@ -149,4 +149,22 @@ addFunc(
 delFunc(
     funcName // 必须，回调函数名
 );
+```
+
+## 其它说明
+关于传入的 toast 函数需要满足下述格式，其它函数如果在发送请求并且启动检查时自动调用此函数向用户反馈消息。
+```
+toast(
+    text, // string 表示通知内容
+    icon, // string 表示 Toast 通知显示的图标
+    error // boolean 表示是否为错误类型的消息
+);
+传入的 load 函数需要满足下述格式，启用加载时将被调用，并在收到返回结果后再次调用以关闭加载
+load(
+    status, // boolean 表示加载的启用状态
+);
+另外 API 请求工具在收到 403 结果的请求时调用 logout 函数，可以在此函数中定义执行内容。（ 403 错误将交由 logout 函数处理，工具本身不会对此错误进行处理 ）
+```
+logout();
+``
 ```
